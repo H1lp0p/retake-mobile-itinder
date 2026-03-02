@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">ITinder</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="login_promo_text">Ты найдешь того, кто\nпоревьюит твой код</string>
+    <string name="login_register_btn">Зарегистрироваться</string>
+    <string name="login_login_btn">Войти</string>
+
+    <string name="register_title">Регистрация</string>
+    
+    <string name="register_email_input_title">Email</string>
+    <string name="register_email_input_placeholder">Ваш email</string>
+    
+    <string name="register_password_title">Пароль</string>
+    <string name="register_password_placeholder">Придумайте пароль</string>
+
+    <string name="register_password_repeat_title">Повторите пароль</string>
+    <string name="register_password_repeat_placeholder">Повторите пароль</string>
+
+    <string name="login_title">Вход</string>
+
+    <string name="login_password_placeholder">Ваш пароль</string>
+
+    <string name="button_back_action">Назад</string>
+
+    <string name="navigation_is_from_splash">from_splash</string>
+    <string name="navigation_intro_source_key">intro_source</string>
+    <string name="navigation_from_register">from_register</string>
+    <string name="navigation_from_login">from_login</string>
+
+    <string name="about_me_title">О себе</string>
+    <string name="about_me_button_placeholder">На главный экран</string>
+
+    <string name="main_screen_title">Главная страница</string>
+</resources>

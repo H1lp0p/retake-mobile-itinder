@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_alpha_20">#33FFFFFF</color>
+    <color name="white_alpha_50">#80FFFFFF</color>
+
+    <color name="gradient_pink_start">#CCAF01FF</color>
+    <color name="gradient_pink_end">#00AF01FF</color>
+    <color name="gradient_purple_start">#CC5A01FF</color>
+    <color name="gradient_purple_end">#005A01FF</color>
+    <color name="gradient_bg">#1F2125</color>
+</resources>

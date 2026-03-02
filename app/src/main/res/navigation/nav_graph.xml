@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/SplashScreenFragment">
+
+    <fragment
+        android:id="@+id/IntroFragment"
+        android:name="com.stuf.itinder.IntroFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/intro_fragment">
+        <action
+            android:id="@+id/action_IntroFragment_to_RegisterFragment"
+            app:destination="@id/RegisterFragment" />
+        <action
+            android:id="@+id/action_IntroFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="com.stuf.itinder.RegisterFragment"
+        tools:layout="@layout/register_fragment">
+        <action
+            android:id="@+id/action_RegisterFragment_to_IntroFragment"
+            app:destination="@id/IntroFragment" />
+        <action
+            android:id="@+id/action_RegisterFragment_to_AboutSelfFragment"
+            app:destination="@id/AboutSelfFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.stuf.itinder.LoginFragment"
+        tools:layout="@layout/login_fragment">
+
+        <action
+            android:id="@+id/action_LoginFragment_to_IntroFragment"
+            app:destination="@id/IntroFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SplashScreenFragment"
+        android:name="com.stuf.itinder.SplashScreenFragment"
+        tools:layout="@layout/splashscreen">
+        <action
+            android:id="@+id/action_SplashScreenFragment_to_SecondFragment"
+            app:destination="@id/IntroFragment"
+            app:popUpTo="@id/SplashScreenFragment"
+            app:popUpToInclusive="true" />/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/AboutSelfFragment"
+        tools:layout="@layout/about_self_fragment"
+        android:name="com.stuf.itinder.AboutSelfFragment"
+        >
+
+    </fragment>
+</navigation>
