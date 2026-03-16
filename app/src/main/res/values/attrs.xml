@@ -1,0 +1,30 @@
+<resources>
+    <declare-styleable name="ChipGroup">
+        <!-- Режим выбора: single / multi -->
+        <attr name="chipSelectionMode" format="enum">
+            <enum name="single" value="0" />
+            <enum name="multi" value="1" />
+        </attr>
+
+        <!-- Максимальное количество выбранных чипов (для single игнорируется) -->
+        <attr name="chipMaxSelectedCount" format="integer" />
+
+        <!-- Текст -->
+        <attr name="chipTextColor" format="color|reference" />
+        <attr name="chipSelectedTextColor" format="color|reference" />
+        <attr name="chipTextSize" format="dimension" />
+        <attr name="chipFontFamily" format="string|reference" />
+        <attr name="chipFontWeight" format="integer" />
+
+        <!-- Фон и скругление -->
+        <attr name="chipBackground" format="reference|color" />
+        <attr name="chipSelectedBackground" format="reference|color" />
+        <attr name="chipCornerRadius" format="dimension" />
+
+        <!-- Отступы и расстояния между чипами -->
+        <attr name="chipHorizontalGap" format="dimension" />
+        <attr name="chipVerticalGap" format="dimension" />
+        <attr name="chipHorizontalPadding" format="dimension" />
+        <attr name="chipVerticalPadding" format="dimension" />
+    </declare-styleable>
+</resources>
