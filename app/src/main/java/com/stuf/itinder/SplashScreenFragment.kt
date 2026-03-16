@@ -34,6 +34,8 @@ class SplashScreenFragment : Fragment() {
     }
 
     private fun logoAnimation(logo: ImageView) {
+        AnimationsTrackerHolder.instance.onAnimationStart()
+
         logo.alpha = 0f
 
         logo.animate()
@@ -41,8 +43,12 @@ class SplashScreenFragment : Fragment() {
             .alpha(1f)
             .setDuration(LOGO_FADEIN_DURATION)
             .withEndAction {
-                logo.hapticClick()
-                goToIntro()
+                try {
+                    logo.hapticClick()
+                    goToIntro()
+                } finally {
+                    AnimationsTrackerHolder.instance.onAnimationEnd()
+                }
             }
             .start()
     }

@@ -63,6 +63,8 @@ class IntroFragment : Fragment() {
     }
 
     private fun animationOut(onEnd: () -> Unit) {
+        AnimationsTrackerHolder.instance.onAnimationStart()
+
         val screenWidth = resources.displayMetrics.widthPixels.toFloat()
 
         val logo = binding.Logo
@@ -85,7 +87,13 @@ class IntroFragment : Fragment() {
         bg.animate()
             .alpha(0.0f)
             .setDuration(SLIDE_DURATION)
-            .withEndAction(onEnd)
+            .withEndAction {
+                try {
+                    onEnd()
+                } finally {
+                    AnimationsTrackerHolder.instance.onAnimationEnd()
+                }
+            }
             .start()
 
         buttons.animate()
@@ -95,6 +103,8 @@ class IntroFragment : Fragment() {
     }
 
     private fun animationFromFragment() {
+        AnimationsTrackerHolder.instance.onAnimationStart()
+
         val screenWidth = resources.displayMetrics.widthPixels.toFloat()
 
         val logo = binding.Logo
@@ -127,6 +137,9 @@ class IntroFragment : Fragment() {
         buttons.animate()
             .alpha(1.0f)
             .setDuration(SLIDE_DURATION)
+            .withEndAction {
+                AnimationsTrackerHolder.instance.onAnimationEnd()
+            }
             .start()
     }
     private fun initialAnimation() {
@@ -146,6 +159,7 @@ class IntroFragment : Fragment() {
         loginButton.translationY = LOGIN_BUTTON_TRANSLATION
 
         root.doOnLayout {
+            AnimationsTrackerHolder.instance.onAnimationStart()
             val rootCenterY = root.height / 2f
             val logoCenterY = logo.y + logo.height / 2f
 
@@ -179,6 +193,9 @@ class IntroFragment : Fragment() {
                         .translationY(0f)
                         .setStartDelay(LOGIN_BUTTON_START_DELAY)
                         .setDuration(BUTTON_SLIDE_DURATION)
+                        .withEndAction {
+                            AnimationsTrackerHolder.instance.onAnimationEnd()
+                        }
                         .start()
                 }
                 .start()

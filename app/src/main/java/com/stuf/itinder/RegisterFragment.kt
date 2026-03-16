@@ -51,6 +51,8 @@ class RegisterFragment : Fragment() {
     }
 
     private fun animationIn() {
+        AnimationsTrackerHolder.instance.onAnimationStart()
+
         val screenWidth = resources.displayMetrics.widthPixels.toFloat()
 
         val title = binding.Title
@@ -77,10 +79,15 @@ class RegisterFragment : Fragment() {
         buttons.animate()
             .alpha(1.0f)
             .setDuration(FADE_DURATION)
+            .withEndAction {
+                AnimationsTrackerHolder.instance.onAnimationEnd()
+            }
             .start()
     }
 
     private fun animationNext(onEnd: () -> Unit) {
+        AnimationsTrackerHolder.instance.onAnimationStart()
+
         val screenWidth = resources.displayMetrics.widthPixels.toFloat()
 
         val title = binding.Title
@@ -102,11 +109,19 @@ class RegisterFragment : Fragment() {
         buttons.animate()
             .alpha(0.0f)
             .setDuration(FADE_DURATION)
-            .withEndAction(onEnd)
+            .withEndAction {
+                try {
+                    onEnd()
+                } finally {
+                    AnimationsTrackerHolder.instance.onAnimationEnd()
+                }
+            }
             .start()
     }
 
     private fun animationOut(onEnd: () -> Unit) {
+        AnimationsTrackerHolder.instance.onAnimationStart()
+
         val screenWidth = resources.displayMetrics.widthPixels.toFloat()
 
         val title = binding.Title
@@ -128,7 +143,13 @@ class RegisterFragment : Fragment() {
         buttons.animate()
             .alpha(0.0f)
             .setDuration(FADE_DURATION)
-            .withEndAction(onEnd)
+            .withEndAction {
+                try {
+                    onEnd()
+                } finally {
+                    AnimationsTrackerHolder.instance.onAnimationEnd()
+                }
+            }
             .start()
     }
 
