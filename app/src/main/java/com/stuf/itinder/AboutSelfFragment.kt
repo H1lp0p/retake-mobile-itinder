@@ -1,6 +1,5 @@
 package com.stuf.itinder
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.HapticFeedbackConstants
@@ -49,9 +48,7 @@ class AboutSelfFragment : Fragment() {
 
         binding.PlaceholderBtn.setOnClickListener {
             it.hapticClick()
-            val context = requireContext()
-            val intent = Intent(context, MainScreenActivity::class.java)
-            startActivity(intent)
+            startActivity(MainScreenActivity.createIntent(requireContext()))
         }
 
         val chips : ChipGroup = binding.ChipGroup

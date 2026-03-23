@@ -50,4 +50,24 @@
     <string name="about_me_button_placeholder">На главный экран</string>
 
     <string name="main_screen_title">Главная страница</string>
+
+    <string name="main_tab_feed">Поток</string>
+    <string name="main_tab_people">Люди</string>
+    <string name="main_tab_chats">Чаты</string>
+    <string name="main_tab_profile">Профиль</string>
+
+    <string name="main_tab_feed_cd">Вкладка «Поток»</string>
+    <string name="main_tab_people_cd">Вкладка «Люди»</string>
+    <string name="main_tab_chats_cd">Вкладка «Чаты»</string>
+    <string name="main_tab_profile_cd">Вкладка «Профиль»</string>
+
+    <string name="main_placeholder_feed_cd">Экран «Поток», заглушка</string>
+    <string name="main_placeholder_people_cd">Экран «Люди», заглушка</string>
+    <string name="main_placeholder_chats_cd">Экран «Чаты», заглушка</string>
+    <string name="main_placeholder_profile_cd">Экран «Профиль», заглушка</string>
+
+    <string name="main_placeholder_feed_label">Поток (заглушка)</string>
+    <string name="main_placeholder_people_label">Люди (заглушка)</string>
+    <string name="main_placeholder_chats_label">Чаты (заглушка)</string>
+    <string name="main_placeholder_profile_label">Профиль (заглушка)</string>
 </resources>

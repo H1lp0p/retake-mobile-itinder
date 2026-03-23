@@ -5,4 +5,10 @@
     <dimen name="mid_gap">16dp</dimen>
     <dimen name="big_gap">24dp</dimen>
 
+    <dimen name="main_bottom_bar_screen_horizontal_padding">16dp</dimen>
+    <dimen name="main_bottom_bar_bottom_padding">16dp</dimen>
+    <dimen name="main_bottom_bar_tab_spacing">8dp</dimen>
+    <dimen name="main_bottom_bar_icon_size">24dp</dimen>
+    <dimen name="main_bottom_bar_indicator_inset">2dp</dimen>
+
 </resources>
