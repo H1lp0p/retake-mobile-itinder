@@ -34,6 +34,19 @@
     <string name="navigation_from_login">from_login</string>
 
     <string name="about_me_title">О себе</string>
+
+    <string name="about_me_add_photo_action">Выбрать фото</string>
+    <string name="about_me_change_photo_action">Изменить фото</string>
+    <string name="about_me_delete_photo_action">Удалить фото</string>
+
+    <string name="about_me_name_input_title">Имя</string>
+    <string name="about_me_name_input_placeholder">Ваше имя</string>
+
+    <string name="about_me_about_input_title">О себе</string>
+    <string name="about_me_about_input_placeholder">Опишите себя</string>
+
+    <string name="about_me_chip_group_input_title">Укажи интересы</string>
+
     <string name="about_me_button_placeholder">На главный экран</string>
 
     <string name="main_screen_title">Главная страница</string>
