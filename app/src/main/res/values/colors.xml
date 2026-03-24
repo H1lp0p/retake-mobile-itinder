@@ -14,4 +14,12 @@
 
     <color name="capsule_bg">#35373B</color>
 
+    <color name="action_btn_dislike">#D4023A</color>
+    <color name="action_btn_like">#00C493</color>
+
+    <color name="feed_chip_background">#80000000</color>
+    <color name="feed_scrollbar_track">#80000000</color>
+    <color name="feed_photo_placeholder_top">#00000000</color>
+    <color name="feed_photo_placeholder_bottom">#000000</color>
+
 </resources>

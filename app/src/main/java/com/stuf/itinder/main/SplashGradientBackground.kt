@@ -7,7 +7,7 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.res.colorResource
 import com.stuf.itinder.R
-import kotlin.math.max
+import kotlin.math.min
 
 /** Mirrors `res/drawable/splash_gradient_bg` layer-list; layer-list drawables cannot use `painterResource`. */
 @Composable
@@ -20,18 +20,18 @@ fun SplashGradientBackground(modifier: Modifier = Modifier) {
 
     Canvas(modifier = modifier) {
         drawRect(color = base)
-        val r = max(size.width, size.height)
+        val r = min(size.width, size.height)
         drawRect(
             brush = Brush.radialGradient(
                 colors = listOf(purpleStart, purpleEnd),
                 center = Offset(size.width * 0.9f, size.height * 0.1f),
-                radius = r * 1f,
+                radius = r * 1.6f,
             ),
         )
         drawRect(
             brush = Brush.radialGradient(
                 colors = listOf(pinkStart, pinkEnd),
-                center = Offset(size.width * 0.1f, size.height * 0.5f),
+                center = Offset(size.width * 0.1f, size.height * 0.3f),
                 radius = r * 1.2f,
             ),
         )

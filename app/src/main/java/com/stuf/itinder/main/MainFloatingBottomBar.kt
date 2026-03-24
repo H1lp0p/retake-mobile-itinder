@@ -137,12 +137,13 @@ fun MainFloatingBottomBar(
         label = "indicatorHeight",
     )
 
-    val tabFontStyle = TextStyle(
+    val tabFontStyle = { checked: Boolean -> TextStyle(
         fontFamily = InterBoldFontFamily,
         fontWeight = FontWeight.Normal,
         fontSize = 14.sp,
-        color = Color.Black,
+        color = if (checked) Color.Black else Color.White,
     )
+    }
 
     Box(
         modifier = modifier
@@ -228,7 +229,7 @@ fun MainFloatingBottomBar(
                                 Spacer(modifier = Modifier.width(6.dp))
                                 Text(
                                     text = stringResource(tab.labelRes),
-                                    style = tabFontStyle,
+                                    style = tabFontStyle(selected),
                                 )
                             }
                         }
