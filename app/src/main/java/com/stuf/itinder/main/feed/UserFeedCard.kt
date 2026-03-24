@@ -127,7 +127,6 @@ fun UserFeedCard(
                     BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
                         var headerBlockHeight by remember(profile.id) { mutableStateOf(0.dp) }
                         val density = LocalDensity.current
-                        val viewportHeight = maxHeight
                         val nameBottom = dimensionResource(R.dimen.feed_card_name_bottom_padding)
                         val chipsBottom = dimensionResource(R.dimen.feed_card_chips_bottom_padding)
                         val contentBottom = dimensionResource(R.dimen.feed_card_content_bottom_padding)
@@ -139,7 +138,7 @@ fun UserFeedCard(
                         ) {
                             Spacer(
                                 modifier = Modifier.height(
-                                    (viewportHeight - headerBlockHeight).coerceAtLeast(0.dp),
+                                    (maxHeight - headerBlockHeight).coerceAtLeast(0.dp),
                                 ),
                             )
                             Column(
@@ -198,83 +197,6 @@ fun UserFeedCard(
                 modifier = Modifier
                     .align(Alignment.CenterEnd)
                     .padding(end = dimensionResource(R.dimen.feed_card_scrollbar_end_padding)),
-            )
-        }
-    }
-}
-
-@Composable
-private fun FeedTagChip(text: String) {
-    Surface(
-        shape = RoundedCornerShape(percent = 50),
-        color = colorResource(R.color.feed_chip_background),
-    ) {
-        Text(
-            text = text,
-            color = Color.White,
-            fontSize = 13.sp,
-            modifier = Modifier.padding(
-                horizontal = dimensionResource(R.dimen.feed_chip_h_padding),
-                vertical = dimensionResource(R.dimen.feed_chip_v_padding),
-            ),
-        )
-    }
-}
-
-@Composable
-private fun RowActions(
-    onPass: () -> Unit,
-    onLike: () -> Unit,
-    passCd: String,
-    likeCd: String,
-    modifier: Modifier = Modifier,
-) {
-    val pill = RoundedCornerShape(percent = 50)
-    val btnH = dimensionResource(R.dimen.feed_card_button_height)
-    val gap = dimensionResource(R.dimen.feed_card_button_gap)
-    val iconSize = dimensionResource(R.dimen.feed_card_icon_in_button)
-
-    Row(
-        modifier = modifier
-            .fillMaxWidth()
-            .padding(
-                horizontal = dimensionResource(R.dimen.feed_card_button_row_horizontal_padding),
-                vertical = dimensionResource(R.dimen.feed_card_button_row_padding_top),
-            ),
-        horizontalArrangement = Arrangement.spacedBy(gap),
-    ) {
-        Box(
-            modifier = Modifier
-                .weight(1f)
-                .height(btnH)
-                .clip(pill)
-                .background(colorResource(R.color.action_btn_dislike))
-                .semantics { contentDescription = passCd }
-                .clickable(onClick = onPass),
-            contentAlignment = Alignment.Center,
-        ) {
-            Icon(
-                painter = painterResource(R.drawable.solar_close_circle_linear),
-                contentDescription = null,
-                modifier = Modifier.size(iconSize),
-                tint = Color.White,
-            )
-        }
-        Box(
-            modifier = Modifier
-                .weight(1f)
-                .height(btnH)
-                .clip(pill)
-                .background(colorResource(R.color.action_btn_like))
-                .semantics { contentDescription = likeCd }
-                .clickable(onClick = onLike),
-            contentAlignment = Alignment.Center,
-        ) {
-            Icon(
-                painter = painterResource(R.drawable.solar_heart_bold),
-                contentDescription = null,
-                modifier = Modifier.size(iconSize),
-                tint = Color.White,
             )
         }
     }

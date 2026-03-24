@@ -51,7 +51,7 @@ class AboutSelfFragment : Fragment() {
             startActivity(MainScreenActivity.createIntent(requireContext()))
         }
 
-        val chips : ChipGroup = binding.ChipGroup
+        val chips: ChipGroup = binding.ChipGroup
 
         chips.setChips(testChips)
 
@@ -62,12 +62,12 @@ class AboutSelfFragment : Fragment() {
             Log.i("CHIP_GROUP", "Tag $tagId got ${!isSelected} -> $isSelected")
         }
 
-        chips.onSelectionChange = {chips ->
+        chips.onSelectionChange = { chips ->
             Log.i("CHIP_GROUP", "SELECTED: ${chips.joinToString()}")
         }
 
         chips.onSelectionLimitReached = { limit ->
-            Log.i("CHIP_GROUP", "Reached selection limit (${limit})")
+            Log.i("CHIP_GROUP", "Reached selection limit ($limit)")
         }
     }
 }

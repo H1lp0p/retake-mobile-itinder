@@ -10,9 +10,8 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
 import androidx.core.content.res.ResourcesCompat
-
-import com.stuf.itinder.R
 import androidx.core.content.withStyledAttributes
+import com.stuf.itinder.R
 
 /**
  * Custom view for chip group.
@@ -34,7 +33,7 @@ class ChipGroup @JvmOverloads constructor(
     /**
      * Calls when reached limit of selected chips
      */
-    var onSelectionLimitReached : ((limit: Int) -> Unit)? = null
+    var onSelectionLimitReached: ((limit: Int) -> Unit)? = null
 
     /**
      * calls after list of selected chips changed
@@ -272,7 +271,6 @@ class ChipGroup @JvmOverloads constructor(
                 R.styleable.ChipGroup_chipVerticalPadding,
                 dp(6f)
             )
-
         }
 
         textPaint.color = chipTextColor
@@ -431,7 +429,6 @@ class ChipGroup @JvmOverloads constructor(
     }
 
     private fun onChipClicked(chip: Chip) {
-
         if (selectionMode == SelectionMode.SINGLE) {
             var changed = false
 
@@ -554,5 +551,4 @@ class ChipGroup @JvmOverloads constructor(
 
         invalidate()
     }
-
 }
