@@ -14,9 +14,9 @@
         android:textFontWeight="700"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:textColor="@color/white"
-        android:layout_marginLeft="24dp"
+        android:layout_marginStart="@dimen/big_gap"
         android:layout_marginTop="67dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

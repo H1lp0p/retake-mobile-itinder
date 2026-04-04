@@ -1,6 +1,5 @@
 package com.stuf.itinder
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -45,9 +44,7 @@ class LoginFragment : Fragment() {
 
         binding.LoginButton.setOnClickListener {
             it.hapticClick()
-            val context = requireContext()
-            val intent = Intent(context, MainScreenActivity::class.java)
-            startActivity(intent)
+            startActivity(MainScreenActivity.createIntent(requireContext()))
         }
     }
 

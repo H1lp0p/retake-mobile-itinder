@@ -1,3 +1,36 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="min_gap">8dp</dimen>
+    <dimen name="mid_gap">16dp</dimen>
+    <dimen name="big_gap">24dp</dimen>
+
+    <dimen name="main_bottom_bar_screen_horizontal_padding">16dp</dimen>
+    <dimen name="main_bottom_bar_bottom_padding">16dp</dimen>
+    <dimen name="main_bottom_bar_tab_spacing">8dp</dimen>
+    <dimen name="main_bottom_bar_icon_size">24dp</dimen>
+    <dimen name="main_bottom_bar_indicator_inset">2dp</dimen>
+
+    <dimen name="main_logo_width">120dp</dimen>
+
+    <dimen name="feed_card_corner_radius">28dp</dimen>
+    <dimen name="feed_card_content_bottom_padding">16dp</dimen>
+    <dimen name="feed_card_scrollbar_end_padding">10dp</dimen>
+    <dimen name="feed_card_scrollbar_track_height">120dp</dimen>
+    <dimen name="feed_card_scrollbar_thumb_height">24dp</dimen>
+    <dimen name="feed_card_scrollbar_track_width">2dp</dimen>
+    <dimen name="feed_card_scrollbar_thumb_width">4dp</dimen>
+    <dimen name="feed_card_button_height">52dp</dimen>
+    <dimen name="feed_card_button_row_padding_top">@dimen/min_gap</dimen>
+    <dimen name="feed_card_button_row_horizontal_padding">@dimen/min_gap</dimen>
+    <dimen name="feed_card_button_gap">12dp</dimen>
+    <dimen name="feed_card_name_bottom_padding">8dp</dimen>
+    <dimen name="feed_card_chips_bottom_padding">12dp</dimen>
+    <dimen name="feed_chip_h_padding">10dp</dimen>
+    <dimen name="feed_chip_v_padding">4dp</dimen>
+    <dimen name="feed_chip_gap_h">8dp</dimen>
+    <dimen name="feed_chip_gap_v">8dp</dimen>
+    <dimen name="feed_card_icon_in_button">28dp</dimen>
+
+    <dimen name="feed_swipe_directional_slop">16dp</dimen>
 </resources>

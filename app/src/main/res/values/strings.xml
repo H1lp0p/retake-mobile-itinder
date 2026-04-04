@@ -34,7 +34,67 @@
     <string name="navigation_from_login">from_login</string>
 
     <string name="about_me_title">О себе</string>
+
+    <string name="about_me_add_photo_action">Выбрать фото</string>
+    <string name="about_me_change_photo_action">Изменить фото</string>
+    <string name="about_me_delete_photo_action">Удалить фото</string>
+
+    <string name="about_me_name_input_title">Имя</string>
+    <string name="about_me_name_input_placeholder">Ваше имя</string>
+
+    <string name="about_me_about_input_title">О себе</string>
+    <string name="about_me_about_input_placeholder">Опишите себя</string>
+
+    <string name="about_me_chip_group_input_title">Укажи интересы</string>
+
     <string name="about_me_button_placeholder">На главный экран</string>
 
     <string name="main_screen_title">Главная страница</string>
+
+    <string name="main_tab_feed">Поток</string>
+    <string name="main_tab_people">Люди</string>
+    <string name="main_tab_chats">Чаты</string>
+    <string name="main_tab_profile">Профиль</string>
+
+    <string name="main_tab_feed_cd">Вкладка «Поток»</string>
+    <string name="main_tab_people_cd">Вкладка «Люди»</string>
+    <string name="main_tab_chats_cd">Вкладка «Чаты»</string>
+    <string name="main_tab_profile_cd">Вкладка «Профиль»</string>
+
+    <string name="main_placeholder_feed_cd">Экран «Поток», заглушка</string>
+    <string name="main_placeholder_people_cd">Экран «Люди», заглушка</string>
+    <string name="main_placeholder_chats_cd">Экран «Чаты», заглушка</string>
+    <string name="main_placeholder_profile_cd">Экран «Профиль», заглушка</string>
+
+    <string name="main_placeholder_feed_label">Поток (заглушка)</string>
+
+    <string name="feed_action_pass_cd">Отклонить профиль</string>
+    <string name="feed_action_like_cd">Нравится профиль</string>
+    <string name="feed_user_card_cd">Карточка пользователя в ленте</string>
+
+    <string name="feed_demo_name">Андрей Иванов</string>
+    <string name="feed_demo_bio">Люблю программировать на питоне. Люблю изучать питон. Люблю всё, что угодно, связанное с питоном. А еще я люблю перл. фвыа фыва фывафыва фыва фыва фывва фыва фыва фыа джло фыва дло фывва ждло фыва дло фыва ждло фыва ждло фыва жддло фыва джло фыва ждло фывва ждло фыва ждло фыва дло фыа ждлло фыва джло фыва длло фывва ждло фывва джло фывва ждло фыва ждлло ывва ждло фыва ждло фыва дло фыва ждлло фыва ждлол фыва ждло фыва ждло фыва ждлло фыва длолфывва длофыва ждло фыва дло фыав ждло ыфва ждло фывждал фыва дло фыа ждло фыа ждло фыва дло фыва ждлло фыва ждло фыва дло фывва дло фыыва ждло фыва ждло фыва ждло фывва ждло фывваж дллофыважд лофыважд олйцуук длофыва длофыважд ловм джл офывваж длофыа ждлофывад лофыва джло фвва длло фвва длоо фва жддло фыыва ждл фв адло ыфав ждло ва ждло фыва ждлло фыа ждлло фва жддол фвав дл оффвва дло офыаж длофываж дло</string>
+    <string name="feed_demo_tag_python">Python</string>
+    <string name="feed_demo_tag_django">Django</string>
+    <string name="feed_demo_tag_rest">REST</string>
+
+    <string name="feed_demo_gigachad_name">Чад Базовый</string>
+    <string name="feed_demo_gigachad_tag_gym">Зал</string>
+    <string name="feed_demo_gigachad_tag_health">ЗОЖ</string>
+    <string name="feed_demo_gigachad_tag_memes">Мемы</string>
+
+    <string name="feed_demo_jojo_name">Джотаро Т.</string>
+    <string name="feed_demo_jojo_tag_java">Java</string>
+    <string name="feed_demo_jojo_tag_stand">Stand</string>
+    <string name="feed_demo_jojo_tag_caps">Кепка</string>
+
+    <string name="feed_demo_maria_name">Мария Козлова</string>
+    <string name="feed_demo_maria_tag_kotlin">Kotlin</string>
+    <string name="feed_demo_maria_tag_compose">Compose</string>
+    <string name="feed_demo_maria_tag_android">Android</string>
+
+    <string name="feed_demo_feed_end">Карточки закончились</string>
+    <string name="main_placeholder_people_label">Люди (заглушка)</string>
+    <string name="main_placeholder_chats_label">Чаты (заглушка)</string>
+    <string name="main_placeholder_profile_label">Профиль (заглушка)</string>
 </resources>
