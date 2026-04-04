@@ -9,13 +9,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.stuf.itinder.R
 
 @Composable
 fun FeedTagChip(text: String) {
     Surface(
-        shape = RoundedCornerShape(percent = 50),
+        shape = RoundedCornerShape(16.dp),
         color = colorResource(R.color.feed_chip_background),
     ) {
         Text(

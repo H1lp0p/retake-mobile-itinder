@@ -77,28 +77,28 @@ fun FeedPlaceholderScreen(modifier: Modifier = Modifier) {
                 name = nameAndrey,
                 tags = listOf(tagPython, tagDjango, tagRest),
                 bio = demoBio,
-                photoResId = R.drawable.andrey,
+                photoResId = R.drawable.andrey_asset,
             ),
             FeedUserProfile(
                 id = "p_gigachad",
                 name = nameGigachad,
                 tags = listOf(tagGym, tagHealth, tagMemes),
                 bio = demoBio,
-                photoResId = R.drawable.gigachad,
+                photoResId = R.drawable.gigachad_asset,
             ),
             FeedUserProfile(
                 id = "p_jojo",
                 name = nameJojo,
                 tags = listOf(tagJava, tagStand, tagCaps),
                 bio = demoBio,
-                photoResId = R.drawable.jojo,
+                photoResId = R.drawable.jojo_asset,
             ),
             FeedUserProfile(
                 id = "p_maria",
                 name = nameMaria,
                 tags = listOf(tagKotlin, tagCompose, tagAndroid),
                 bio = demoBio,
-                photoResId = R.drawable.andrey,
+                photoResId = R.drawable.andrey_asset,
             ),
         )
     }
